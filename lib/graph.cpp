@@ -1,12 +1,13 @@
 #include <assert.h>
 #include "graph.h"
 
-Graph :: Graph(int numOfVertices)
+Graph :: Graph(int numOfVerticesTemp)
 {
 	/*
 	Constructor for Graph Class
 	*/
 	
+	numOfVertices = numOfVerticesTemp;
 	// Set all the edges to 0 initially
 	int i, j;
 	for(i = 0; i < numOfVertices; i++)
@@ -48,7 +49,7 @@ int Graph :: getNeighbourList(int index, int neighbourList[MAX_NEIGHBOURS])
 	index.
 	*/
 	
-	int neigbourIndex;
+	int neighbourIndex;
 	int i = 0;
 	
 	for(neighbourIndex = 0; neighbourIndex < numOfVertices; neighbourIndex++)
@@ -59,12 +60,12 @@ int Graph :: getNeighbourList(int index, int neighbourList[MAX_NEIGHBOURS])
 	
 	// All other spaces are set to -1 to avoid confusion with garbage values
 	for(; i < MAX_NEIGHBOURS; i++)
-		neighboursList[i] = -1;
+		neighbourList[i] = -1;
 	
-	return(0)
+	return(0);
 }
 
-int assertIndexInRange(int index)
+int Graph :: assertIndexInRange(int index)
 {
 	/*
 	Ensures that given index is in appropriate range i.e it is an
@@ -72,7 +73,7 @@ int assertIndexInRange(int index)
 	if it is not in range.
 	*/
 	
-	indexInRange = ( index > 0 && index <= numOfVertices );
+	int indexInRange = ( index >= 0 && index < numOfVertices );
 	assert(indexInRange);	
 	
 	return(0);

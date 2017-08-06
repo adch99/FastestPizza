@@ -19,7 +19,6 @@ class Vertex
 };
 
 
-
 class Graph
 {
 	private:
@@ -28,6 +27,7 @@ class Graph
 		// Adjacency array for retrieving the weight of each edge. 
 		// This implementation is easily extendable to directed graphs as well but that
 		// will not be a part of our main objective.
+		int numOfVertices;
 		
 	public:
 		// Preferably keep an integer return value for all function that do not need
@@ -36,7 +36,7 @@ class Graph
 		
 		// Indexes can be in integers in half open range [0, numOfVertices)
 		
-		Graph(int numOfVertices);
+		Graph(int numOfVerticesTemp);
 		
 		int addEdge(int index1, int index2, int weight); // Undirected Vertex
 		int getEdgeWeight(int index1, int index2);
@@ -48,10 +48,5 @@ class Graph
 		// Functions that may be defined for later extension
 		//int addDirectedEdge(int indexFrom, int indexTo, int weight);
 };
-
-
-
-
-
 
 #endif
