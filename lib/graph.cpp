@@ -1,4 +1,5 @@
 #include <assert.h>
+#include "graph.h"
 
 Graph :: Graph(int numOfVertices)
 {

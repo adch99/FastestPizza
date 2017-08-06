@@ -12,8 +12,6 @@ and its Vertices and Edges.
 
 // Classes begin from here
 
-
-
 class Vertex
 {
 	public:

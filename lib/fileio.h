@@ -22,4 +22,3 @@ class GraphParser
 		Graph open(char path[MAX_PATHLENGTH]);
 };
 
-pl
