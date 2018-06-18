@@ -1,6 +1,8 @@
-#include <assert.h>
+//------------------------------------------- Header Section ------------------------------------------
+#include <cassert>
 #include "graph.h"
 
+//########################## Graph Class ##########################
 Graph :: Graph(int numOfVerticesTemp)
 {
 	/*
@@ -64,6 +66,12 @@ int Graph :: getNeighbourList(int index, int neighbourList[MAX_NEIGHBOURS])
 	
 	return(0);
 }
+
+int Graph :: getNumOfVertices()
+{
+	return(numOfVertices);
+}
+
 
 int Graph :: assertIndexInRange(int index)
 {

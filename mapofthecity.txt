@@ -1,0 +1,7 @@
+Khar Bandra 2
+Santacruz Bandra 3
+Shop Kalina 7
+Khar Santacruz 6
+Bandra Kalina 8
+Shop Santacruz 6
+Khar Shop 4

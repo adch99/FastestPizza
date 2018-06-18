@@ -1,5 +1,6 @@
 # Ignore the files in build/ directory
 build/
+backuplib/
 
 # You can add your own rules to ignore certain types of files
 # Uncomment the next line if you want git to ignore all the .o files
