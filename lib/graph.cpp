@@ -1,6 +1,6 @@
 //------------------------------------------- Header Section ------------------------------------------
 #include <cassert>
-#include "graph.h"
+#include "lib/graph.h"
 
 //########################## Graph Class ##########################
 Graph :: Graph(int numOfVerticesTemp)
